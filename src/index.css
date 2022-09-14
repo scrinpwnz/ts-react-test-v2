@@ -1,13 +1,79 @@
+:root {
+  --primary: #a5a4ff;
+  --primary-dark: #6c6ceb;
+  --text-color: #ffffff;
+  --background-paper: #424242;
+  --background: #303030;
+  --grey: #6e6e6e;
+  --error: #f44336;
+  --success: #5fc337;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  color: var(--primary);
+}
+
+* {
+  border: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--background);
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  background-color: var(--background-paper);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+}
+
+input {
+  height: 40px;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  outline: 1px var(--grey) solid;
+}
+
+input:hover {
+  outline: 1px var(--primary) solid;
+}
+
+input:focus {
+  outline: 2px var(--primary) solid;
+}
+
+select {
+  height: 40px;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  outline: 1px var(--grey) solid;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  background-color: var(--background);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

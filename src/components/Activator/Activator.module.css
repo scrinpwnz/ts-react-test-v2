@@ -1,0 +1,57 @@
+.activator {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 400px;
+  padding: 16px 24px;
+}
+
+.formula {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formula > input {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+}
+
+.conditions {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.condition {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.condition > span {
+  font-size: 20px;
+}
+
+.condition > input {
+  width: 64px;
+}
+
+.result {
+  padding: 8px 16px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.resultGood {
+  background: var(--success);
+}
+
+.resultBad {
+  background: var(--error);
+}

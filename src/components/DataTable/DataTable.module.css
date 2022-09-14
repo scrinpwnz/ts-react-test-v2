@@ -1,0 +1,57 @@
+.dataTable {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 400px;
+  padding: 16px 24px;
+}
+
+.title {
+  text-align: center;
+}
+
+.table {
+  display: grid;
+  height: 150px;
+  overflow: auto;
+  background: var(--background);
+}
+
+.tableRow {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  font-size: 18px;
+  padding: 4px 16px;
+}
+
+.tableRow:nth-child(2n) {
+  background: var(--background-paper);
+}
+
+.error {
+  color: var(--error);
+  font-weight: bold;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.noMatches {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress {
+  display: grid;
+  place-items: center;
+  padding: 16px 0;
+}
+
+.highlight {
+  color: var(--primary);
+}
